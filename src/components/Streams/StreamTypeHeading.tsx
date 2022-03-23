@@ -9,7 +9,7 @@ export default function StreamTypeHeading(props) {
 
   if (streams && streams[type].length > 0) {
     return (
-      <Text backgroundColor="#2580FF" bgClip="text" fontSize="lg" fontWeight="bold">
+      <Text backgroundColor="#2580FF" bgClip="text" fontSize={['2xl', '3xl']} fontWeight="bold">
         {/* capitalize */}
         {type[0].toUpperCase() + type.slice(1)}
       </Text>

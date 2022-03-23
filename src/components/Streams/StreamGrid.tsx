@@ -80,21 +80,21 @@ export default function StreamGrid(props) {
         {type == 'live' ? (
           <HStack>
             <Text whiteSpace="nowrap">Sort by</Text>
-            <Select width="200px" onChange={props.onSortTypeChange}>
+            <Select width="120px" onChange={props.onSortTypeChange}>
               <option value="viewers">Viewers</option>
               <option value="timeElapsed">Time Elapsed</option>
             </Select>
-            <Text whiteSpace="nowrap">Reload Videos</Text>
+            {/* <Text whiteSpace="nowrap">Reload Videos</Text>
             <IconButton
               aria-label="reload"
-              // onClick={() => {
-              //   mutate(
-              //     'https://api.holotools.app/v1/live?max_upcoming_hours=48&hide_channel_desc=1'
-              //   )
-              // }}
+              onClick={() => {
+                mutate(
+                  'https://api.holotools.app/v1/live?max_upcoming_hours=48&hide_channel_desc=1'
+                )
+              }}
             >
               <GrRefresh />
-            </IconButton>
+            </IconButton> */}
           </HStack>
         ) : null}
       </HStack>

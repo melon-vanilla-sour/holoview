@@ -18,7 +18,7 @@ export default function Header() {
       <Text
         bgGradient="linear(to-l, #36F3FF, #2580FF)"
         bgClip="text"
-        fontSize="6xl"
+        fontSize={['4xl', '6xl']}
         fontWeight="extrabold"
         w="full"
       >
@@ -26,9 +26,7 @@ export default function Header() {
       </Text>
       <IconButton
         aria-label="toggle-dark-mode"
-        icon={
-          colorMode === 'light' ? <MdOutlineDarkMode /> : <MdOutlineLightMode />
-        }
+        icon={colorMode === 'light' ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
         onClick={toggleColorMode}
       >
         {colorMode === 'light' ? 'Dark' : 'Light'} Mode
